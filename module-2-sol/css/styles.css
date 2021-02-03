@@ -1,0 +1,78 @@
+* {
+    font-family: Comic Sans MS;
+    box-sizing: border-box;
+}
+
+.main_title {
+    text-align: center;
+    margin: 35px 25px 25px 25px;
+}
+
+.main_title > h1 {
+    font-size: 175%;
+}
+
+.row {
+    padding: 5px;
+}
+
+.col {
+    float: left;
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.food_title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 7px;
+    overflow: hidden;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.col > p {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+@media (min-width: 992px){
+    .col {
+        width: 31%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .col {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .col:nth-child(3) {
+        width: 98%;
+    }
+}
+
+.col {
+    background-color: darkgrey;
+}
+
+#chicken_title {
+    background-color: #d59898;
+}
+
+#beef_title {
+    background-color: #c14543;
+    color: white;
+}
+
+#sushi_title {
+    background-color: #e5d198;
+}
